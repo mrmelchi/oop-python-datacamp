@@ -19,7 +19,13 @@ class Employee(object):
         '''
         self.name = name
         self.email = email
-        self.salary = salary
+
+        if salary >= 0:
+            self.salary = salary
+        else:
+            self.salary = 0
+            print('Invalid salary!')
+        
         self.rank = rank
     
     def give_raise(self, amount):
