@@ -61,3 +61,12 @@ def from_file(cls, file_name):
     # cls(..) will call __init__(...)
     return cls(name)
 ```
+
+## Class Inheritance
+
+Object oriented programming is fundamentally about code re-use. OOP allows us to keep interface consistent while customizing functionality. Class Inheritance is a mechanism by which we can define a new class which gets all the functionality of another class including something extra without re-implementing the whole code from the scratch.
+
+Let's say, we have a basic **BankAccount** class that has a `balance` attribute and a `withdraw` method. Now, the bank provides **SavingsAccount** inherits BankAccount which has an interest rate and a method to calculate interest. Moreover, because of inheritance one can see the balance and withdraw money using SavingsAccount. So, we are re-using the code of BankAccount class.
+
+- With inheritance we will also be able to customize a method.
+- Inheritance represents is-A relationship.
