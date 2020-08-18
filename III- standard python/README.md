@@ -41,3 +41,10 @@ Whenever two objects of a same class are compared, Python by default call the `_
 | <        | _\_lt__() |
 
 There is a `__hash__()` method that allows us to use objects as dictionary keys and in sets.
+
+## String representation
+
+There are two special methods that we can define in a class that will return a printable representation of an object.
+
+- `__str__()` - Suppossed to give informal representation, suitable for end-user
+- `__repr__()`- Formal. Mainly used by developers. Mostly preferred because it reproduces representation and a fallback for print when str isn't defined.
