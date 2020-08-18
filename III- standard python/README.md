@@ -2,7 +2,7 @@
 
 ```python
 class Customer:
-    def __init__(self, name, balance):
+    def `__init__`(self, name, balance):
         self.name, self.balance = name, balance
 
 
@@ -33,12 +33,12 @@ Whenever two objects of a same class are compared, Python by default call the `_
 
 | Operator | Method |
 | ------------- | ------------- |
-| ==       | _\_eq__() |
-| !=       | _\_nq__() |
-| >=       | _\_gq__() |
-| <=       | _\_lq__() |
-| >        | _\_gt__() |
-| <        | _\_lt__() |
+| ==       | `__eq__()` |
+| !=       | `__nq__()` |
+| >=       | `__gq__()` |
+| <=       | `__lq__()` |
+| >        | `__gt__()` |
+| <        | `__lt__()` |
 
 There is a `__hash__()` method that allows us to use objects as dictionary keys and in sets.
 
