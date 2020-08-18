@@ -1,6 +1,6 @@
-# OOP Python DataCamp
-
 ![Banner](assets/oop.png)
+
+# OOP Python DataCamp
 
 A course offered by DataCamp & taugh by @alexyarosh . In this course, I've taken notes on standard approaches for class design, inheritance, polymorphism, encapsulation and other OOP fetures as a part of my researchwork. Notes on OOP covered in this course are listed below.
 
