@@ -1,0 +1,1 @@
+In this exercise, you will be a game developer working on a game that will have several players moving on a grid and interacting with each other. As the first step, you want to define a Player class that will just move along a straight line. Player will have a position attribute and a move() method. The grid is limited, so the position of Player will have a maximal value.
