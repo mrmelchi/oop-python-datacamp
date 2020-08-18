@@ -32,7 +32,7 @@ array1 == array2
 Whenever two objects of a same class are compared, Python by default call the `__eq__` method. We can redefine this method to perform custom comparison code. Other comparison:
 
 | Operator | Method |
-:----------:--------:
+| ------------- | ------------- |
 | ==       | _\_eq__() |
 | !=       | _\_nq__() |
 | >=       | _\_gq__() |
