@@ -2,7 +2,7 @@
 
 ```python
 class Customer:
-    def `__init__`(self, name, balance):
+    def __init__(self, name, balance):
         self.name, self.balance = name, balance
 
 
@@ -48,3 +48,42 @@ There are two special methods that we can define in a class that will return a p
 
 - `__str__()` - Suppossed to give informal representation, suitable for end-user
 - `__repr__()`- Formal. Mainly used by developers. Mostly preferred because it reproduces representation and a fallback for print when str isn't defined.
+
+## Exceptions
+
+Some statements in Python will cause an error when we try to execute them. For example:
+
+- Dividing by Zero
+- Combining objects with incompitable types, etc.
+
+These errors are called execeptions. Many exceptions have special names like **ZeroDivisionError** or, **TypeError**. If we don't handle possible exceptions correctly, they might stop our entire program. To prevent a program from terminating when an exception is raised we use `try except finally`.
+
+- Usually, we wrap the code we worry about inside try block.
+- Throw exceptions with the particular Exception occurs. The code should be executed when a particular exceptions is raised. We can have multiple except
+- In finally block, we wanna execute some code no matter what happens previously. For example: we might wanna close an opened file or, Database connection here.
+
+```python
+try:
+    # do something
+except ExcetionName:
+    # handle exception
+except AnotherException:
+    # handle exception
+finally:
+    # do something no matter what
+```
+
+Sometimes, we might wanna raise an exception and terminate a process. For example, we wanna stop a user sign-up process whenever a password isn't matching the criteria:
+
+```python
+def validate(self, password):
+    if len(password) < 8:
+        raise ValueError("Invalid Password")
+    return "Password must be of 8 characters at least"
+```
+
+In python, exceptions are actually classes inherited from built-in classes like BaseException or, Exception.
+
+### Custom Exceptions
+
+Custom exception classes are useful because they can be specific for our application and can provide more granular handling of errors. To develop a custom exception we inherit the built in Exception class or, one of it's sub-classes.
